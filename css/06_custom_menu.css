@@ -1,0 +1,52 @@
+/* 06_custom_menu.css */
+/* TODO: 전체박스(페이지) */
+#page {width: 99vw; height: 99vh; margin: 0 auto;}
+/* TODO: 대메뉴(GNB) */
+nav {width: 100%; margin: 0 auto;}
+.brand {text-align: center; padding: 1.5rem;}
+.fab img {width: 2rem;}
+.fac img {width: 2rem;}
+/* TODO: 햄버거메뉴 좌표이동: (15,25) */
+.fab {position: absolute; left: 15px; top:25px}
+/* TODO: 닫기이미지 좌표이동: (320,25) */
+.fac {position: absolute; left: 320px; top:25px}
+/* TODO: 메뉴 */
+.menu li {
+    float: left; 
+    width: 45%; 
+    border: 1px solid var(--grayscale-20);
+    border-radius: 10px;
+    margin: 2px;
+
+}
+.menu li a {
+    display: block; 
+    height: 6rem;
+    /* TODO: flex 사용 (가로/세로 중앙) */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+/* 메뉴 우/좌 바깥여백: 15px */
+.menu {margin: 0 auto;}
+/* TODO: 마우스위(hover): 배경색: 파란색, 글자색:하얀색 */
+.menu li a:hover {
+    background-color: var(--blue-light-30);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+nav {width: 90%;}
+.fab {display: none;}
+.fac {display: none;}
+.brand {float: left; margin-top: 10px;}
+.menu {float: right;}
+.menu li {border: none; width: auto;}
+.menu li a {padding: 1rem 0.6rem 1rem 0.6rem ;}
+
+}
+
+@media screen and (min-width: 1024px) {
+nav {width: 60%;}
+}

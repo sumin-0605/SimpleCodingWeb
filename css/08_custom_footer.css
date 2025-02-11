@@ -1,0 +1,26 @@
+#page {
+    width: 99vw;
+    height: 99vh;
+    margin: 0 auto;
+}
+footer {
+    clear: both;
+    height: 6rem;
+    background-color: var(--grayscale-20);
+    font-style: italic;
+}
+#address {
+    margin-left: 2rem;
+    height: 50%;
+}
+#customer {
+    margin-left: 2rem;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    #address { float: left; height: 100%; margin-top: 2rem;}
+    #customer {float: right; height: 100%; margin-right: 2rem;}
+}
+    
